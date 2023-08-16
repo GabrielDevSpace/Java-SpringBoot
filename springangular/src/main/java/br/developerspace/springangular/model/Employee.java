@@ -10,7 +10,7 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @Column(name = "first_name")
-    private String fistName;
+    private String firstName;
 
     @Column(name = "last_name")
     private String lastName;
@@ -22,7 +22,7 @@ public class Employee {
     }
 
     public Employee(String fistName, String lastName, String emailId) {
-        this.fistName = fistName;
+        this.firstName = fistName;
         this.lastName = lastName;
         this.emailId = emailId;
     }
@@ -35,12 +35,12 @@ public class Employee {
         this.id = id;
     }
 
-    public String getFistName() {
-        return fistName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFistName(String fistName) {
-        this.fistName = fistName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
